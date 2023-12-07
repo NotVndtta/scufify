@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import './App.css'
 import Background from './Components/Background/Background';
 import Navbar from './Components/Navbar/Navbar'
+import Artists from './Components/Artists/Artists';
 
 function App() {
   const [heroCount, setHeroCount] = useState(5);
@@ -16,6 +17,7 @@ function App() {
     <div>
     <Background playStatus={playStatus} heroCount={heroCount}/>
     <Navbar />
+    <Artists />
     </div>
   )
 }

@@ -12,11 +12,11 @@ const Background = ({playStatus, heroCount}) => {
             </video>
         )
     }
-  return (
-    <div>
-      
-    </div>
-  )
+    else {
+      return (
+          <img src={miron1} alt="background image" />
+      )
+    }
 }
 
 export default Background
