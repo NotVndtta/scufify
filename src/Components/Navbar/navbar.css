@@ -5,6 +5,7 @@
     color: white;
     font-size: 40px;
     padding: 10px 30px;
+    background: black;
 }
 .nav-logo {
     font-weight: 900;
@@ -17,6 +18,11 @@
     list-style: none;
     align-items: center;
     gap: 100px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #fff;
 }
  
 .nav-contact {

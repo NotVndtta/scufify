@@ -1,27 +1,23 @@
 import React from 'react'
 import './navbar.css'
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-
-import Artists from '../Artists/Artists';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
-    <div>
-
-      <div className='nav'>
-        <div className="nav-logo"> Scufify</div>
-        <ul className="nav-menu">
-          <li>Home</li>
-          <li>Artists</li>
-          <li>Trends</li>
-          <li>Contact</li>
-        </ul>
-      </div>
-        
-      
-    </div>
+    <div className='nav'>
+      <div className="nav-logo"> Scufify</div>
+      <ul className="nav-menu">
+        <li>
+          <Link to='/'>Home</Link>
+        </li>
+        <li>
+          <Link to='/artists'>Artists</Link>
+        </li>
+        <li>Trends</li>
+        <li>Contact</li>
+      </ul>
+    </div>    
   )
 }
-
 
 export default Navbar

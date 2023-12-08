@@ -1,0 +1,10 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 5em;
+    color: black;
+    background-color: #f3f3f3;
+  }
+  

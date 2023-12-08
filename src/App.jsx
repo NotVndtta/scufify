@@ -4,6 +4,8 @@ import Background from './Components/Background/Background';
 import Navbar from './Components/Navbar/Navbar'
 import Artists from './Components/Artists/Artists';
 
+import { BrowserRouter, Routes, Route} from 'react-router-dom';
+
 function App() {
   const [heroCount, setHeroCount] = useState(5);
   const [playStatus, setPlayStatus] = useState(true);
@@ -14,11 +16,15 @@ function App() {
     }, 5000);
   },[])
   return (
-    <div>
+    <BrowserRouter>
     <Background playStatus={playStatus} heroCount={heroCount}/>
     <Navbar />
-    <Artists />
-    </div>
+      <Routes>
+
+        <Route path='/artists' element={<Artists />} />
+    
+      </Routes>
+    </BrowserRouter>
   )
 }
 
