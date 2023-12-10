@@ -7,4 +7,33 @@
     color: black;
     background-color: #f3f3f3;
   }
+
+  .artist {
+    padding: 10px 10px;
+    display: flex;
+    border: 1px solid black;
+    align-items: center;
+   flex-direction: row;
+   gap: 100px;
+  }
   
+  .artist_img {
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+  }
+
+  .artist_text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .artist_name {
+    font-size: 46px;
+    font-weight: 700;
+  }
+
+  .artist_description{
+    font-size: 36px;
+    font-weight: 500;
+  }
