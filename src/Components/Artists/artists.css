@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 85vh;
     font-size: 5em;
     color: black;
     background-color: #f3f3f3;
@@ -18,8 +18,8 @@
   }
   
   .artist_img {
-    width: 250px;
-    height: 250px;
+    width: 220px;
+    height: 220px;
     border-radius: 100%;
   }
 
