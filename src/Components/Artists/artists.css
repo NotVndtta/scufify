@@ -2,26 +2,49 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 85vh;
+    
     font-size: 5em;
-    color: black;
-    background-color: #f3f3f3;
+    color: rgb(255, 228, 225);
+    background-color: rgb(39,10,31);
+    padding: 10px 250px;
+
+    overflow: hidden;
+    position: relative;
   }
 
   .artist {
+    margin-bottom: 0; /* Убираем нижний отступ */
     padding: 10px 10px;
     display: flex;
-    border: 1px solid black;
+    border: 1px solid rgb(255, 228, 225);
     align-items: center;
-   flex-direction: row;
-   gap: 100px;
+    flex-direction: row;
+    gap: 100px;
+    border-radius: 10px;
+
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
   }
   
+  .artist:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transform: translateY(-10px);
+  }
+
   .artist_img {
     width: 220px;
     height: 220px;
     border-radius: 100%;
+
+    border-radius: 50%;
+    transition: 0.5s;
   }
+
+  .artist_img:hover {
+    transform: scale(1.1);
+  }
+  
 
   .artist_text {
     display: flex;
@@ -31,9 +54,11 @@
   .artist_name {
     font-size: 46px;
     font-weight: 700;
+    color: rgb(255, 228, 225);
   }
 
   .artist_description{
     font-size: 36px;
     font-weight: 500;
+    word-wrap: break-word;
   }
