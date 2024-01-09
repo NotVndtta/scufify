@@ -11,6 +11,7 @@ import slava from './assets/slava.jpg'
 import love from './assets/love.jpg'
 
 import { BrowserRouter, Routes, Route} from 'react-router-dom';
+import Footer from './Components/Footer/Footer';
 
 
 
@@ -41,26 +42,32 @@ const artistsData = [
 
 const App = () => {
   let heroData = [
-    {text1:"Drive into", text2:"what you love"},
+    {text1:"Oxxxymiron", text2:"1.Kla$"},
     {text1:"Indulge", text2:"your passions"},
     {text1:"Give in to", text2:"your passions"},
   ]
 
-  const [heroCount, setHeroCount] = useState(5);
+  const [heroCount, setHeroCount] = useState(2);
   const [playStatus, setPlayStatus] = useState(true);
 
   useEffect(() =>{
     setInterval(() => {
-    setHeroCount((count) => {return count === 5? 0:count+1})
+    setHeroCount((count) => {return count === 2? 0:count+1})
     }, 5000);
   },[])
   return (
     <BrowserRouter>
-     <Background playStatus={playStatus} heroCount={heroCount}/>
     <Navbar /> 
+    <Background playStatus={playStatus} heroCount={heroCount}/>
+    <Hero 
+     setPlayStatus={setPlayStatus}
+     heroData={heroData[heroCount]}
+     heroCount={heroCount}
+     setHeroCount={setHeroCount}
+     playStatus={playStatus}
+    /> 
     
-      <Routes>
-
+    <Routes>
         <Route path='/artists' element={artistsData.map((artist, index) => (
           <Artists
             key={index}
@@ -69,8 +76,8 @@ const App = () => {
             avatar={artist.avatar}
           />)) } />
     
-      </Routes>
-      
+     </Routes>
+      <Footer />
     </BrowserRouter>
     
   )
