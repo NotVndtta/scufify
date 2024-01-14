@@ -1,45 +1,32 @@
 import React from 'react'
 import "./footer.css"
-import FacebookImg from '../../assets/fb.svg'
-import InstagramImg from '../../assets/inst.svg'
-import TwitterImg from '../../assets/tw.svg'
-import InImg from '../../assets/in.svg'
+
 const Footer = () => {
   return (
     <section className='footer'>
-        <div className='container'>
-            <div className="footer_content">
-                    <div className="footer_first_column">
-                        <div className="footer_fashion">
-                            Scufify
-                        </div>
-                        <div className="footer_description">
-                            Best music platform
-                        </div>
-                        
-                        <div className="footer_icons">
-                            <img src={FacebookImg} alt="Facebook"></img>
-                            <img src={InstagramImg} alt="Intagram"></img>
-                            <img src={TwitterImg} alt="Twitter"></img>
-                            <img src={InImg} alt="In"></img>
-                        </div>
-                    </div>
-                    <div className="footer_links">
-                        <div className="footer_company">
-                            Company
-                            <div className="company_links">
-                                <a href="#!">About</a>
-                            <br />
-                                <a href="#!">Contact us</a> 
-                            <br />
-                                <a href="#!">Support</a>
-                            <br /> 
-                                <a href="#!">Careers</a> 
-                            </div>
-                        </div>
-                        
-                    </div>
-            </div>
+        <div className="footer-content">
+            <p> Scufify </p>
+        </div>
+        <div className="footer-content">
+            <h4>Compamy</h4>
+            <li><a href='#'> About us</a></li>
+            <li><a href='#'> Safety</a></li>
+            <li><a href='#'> Support</a></li>
+            <li><a href='#'> Cooperation</a></li>
+        </div>
+        <div className="footer-content">
+            <h4>Movement</h4>
+            <li><a href='#'> Movement</a></li>
+            <li><a href='#'> Subscribes</a></li>
+            <li><a href='#'> Pricing</a></li>
+            <li><a href='#'> Add order</a></li>
+        </div>
+        <div className="footer-content">
+            <h4>Help</h4>
+            <li><a href='#'> Privacy</a></li>
+            <li><a href='#'> Condition</a></li>
+            <li><a href='#'> Blog</a></li>
+            <li><a href='#'> FAQs</a></li>
         </div>
     </section>
   )
