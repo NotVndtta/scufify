@@ -2,6 +2,7 @@
   "name": "scufify",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://notvndtta.github.io/scufify/"
   "type": "module",
   "scripts": {
     "dev": "vite",
