@@ -1,6 +1,5 @@
 import React from 'react'
 import './background.css'
-import zaya from './../../assets/zaya.jpeg'
 import miron from './../../assets/miron.mp4'
 import image1 from './../../assets/miron.jpg'
 import image2 from './../../assets/miron.jpg'

@@ -13,7 +13,9 @@ const Navbar = () => {
         <li>
           <Link to='/artists'>Artists</Link>
         </li>
-        <li>Trends</li>
+        <li>
+        <Link to='/artist'>Trends </Link>
+        </li>
         <li>Contact</li>
       </ul>
     </div>    

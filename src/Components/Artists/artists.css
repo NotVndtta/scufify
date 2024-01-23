@@ -21,13 +21,13 @@
     gap: 100px;
     border-radius: 10px;
 
-    background: rgba(255, 255, 255, 0.1);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-    transition: 0.5s;
+   
+
+    backdrop-filter: blur(40px); 
   }
   
   .artist:hover {
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
     transform: translateY(-10px);
   }
 
@@ -35,13 +35,11 @@
     width: 220px;
     height: 220px;
     border-radius: 100%;
-
-    border-radius: 50%;
     transition: 0.5s;
   }
 
   .artist_img:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
   }
   
 
@@ -60,4 +58,5 @@
     font-size: 36px;
     font-weight: 500;
     word-wrap: break-word;
+    color: white;
   }

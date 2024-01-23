@@ -6,12 +6,13 @@ import Artists from './Components/Artists/Artists';
 import Hero from './Components/Hero/Hero';
 import mironus from './assets/mirron.png'
 import kumir from './assets/kumir.jpg'
-import dora from './assets/dora.png'
+import dora from './assets/dora.jpg'
 import slava from './assets/slava.jpg'
 import love from './assets/love.jpg'
 
 import { BrowserRouter, Routes, Route} from 'react-router-dom';
 import Footer from './Components/Footer/Footer';
+import Content from './Components/Content/Content';
 
 
 
@@ -75,7 +76,9 @@ const App = () => {
             description={artist.description}
             avatar={artist.avatar}
           />)) } />
-    
+
+        <Route path='/artist' element = {
+        <Content /> } />
      </Routes>
       <Footer />
     </BrowserRouter>
