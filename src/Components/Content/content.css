@@ -1,0 +1,36 @@
+
+section {
+    background: #181818;
+}
+.singer{
+    display: inline-table;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    color: white;
+    
+
+}
+
+.singer__header {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 100px;
+}
+
+.singer__image {
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+}
+
+.singer__name {
+    text-align: left;
+}
+
+.singer__name span{
+    font-weight: 500;
+}
+
+.singer__content iframe {
+    background-color: #181818;
+}
